@@ -36,15 +36,22 @@ export default class Cl_index {
     salon.agregarEstud({ nombre: "Eva", edad: 16 });
     salon.agregarEstud({ nombre: "Ray", edad: 20 });
     alert(`
-      Demo salón de clases
-      Edad promedio= ${salon.edadPromedio()}
-      Cantidad encima promedio= ${salon.cantEncimaDelPromedio()}
-      Quiénes encima promedio= ${JSON.stringify(salon.quienesEncimaPromedio())}
-      Edad mayor= ${salon.edadMayor()}
-      Quiénes con edad mayor= ${JSON.stringify(salon.quienesEdadMayor())}
-      Quiénes con edad 18= ${JSON.stringify(salon.quienesConEdad(18))}
-      Quiénes con edad 20= ${JSON.stringify(salon.quienesConEdad(20))}
-      `)
+Demo salón de clases
+
+==> Edad promedio= ${salon.edadPromedio()}
+
+==> Cantidad encima promedio= ${salon.cantEncimaDelPromedio()}
+
+==> Quiénes encima promedio= ${JSON.stringify(salon.quienesEncimaPromedio())}
+
+==> Edad mayor= ${salon.edadMayor()}
+
+==> Quiénes con edad mayor= ${JSON.stringify(salon.quienesEdadMayor())}
+
+==> Quiénes con edad 18= ${JSON.stringify(salon.quienesConEdad(18))}
+
+==> Quiénes con edad 20= ${JSON.stringify(salon.quienesConEdad(20))}
+      `);
   }
   mostrarDemo() {
     let opc = prompt("Seleccione una opción:").toUpperCase();

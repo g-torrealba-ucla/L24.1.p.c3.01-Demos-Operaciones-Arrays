@@ -9,14 +9,14 @@ export default class Cl_demosArrays {
       { nombre: "Eva", edad: 17 },
     ];
     alert(`
-        Tipos de datos primitivos:
-        numeros[2] = ${numeros[2]}
-        booleanos[1] = ${booleanos[1]}
-        strings[0] = ${strings[0]}
+==> Tipos de datos primitivos:
+numeros[2] = ${numeros[2]}
+booleanos[1] = ${booleanos[1]}
+strings[0] = ${strings[0]}
 
-        Tipos de datos objetos:        
-        personas[0].nombre = ${personas[0].nombre}
-        personas[1].edad = ${personas[1].edad}
+==> Tipos de datos objetos:        
+personas[0].nombre = ${personas[0].nombre}
+personas[1].edad = ${personas[1].edad}
         `);
   }
 
@@ -28,13 +28,13 @@ export default class Cl_demosArrays {
     ];
 
     alert(`
-      Acceder a una Propiedad de un Objeto:
-      Nombre primera persona:
-         personas[0].nombre = ${personas[0].nombre}
+==> Acceder a una Propiedad de un Objeto:
+Nombre primera persona:
+    personas[0].nombre = ${personas[0].nombre}
 
-      Acceder a una Propiedad Usando Notación de Corchetes:
-      Edad primera persona: 
-         personas[0]["edad"] = ${personas[0]["edad"]}
+==> Acceder a una Propiedad Usando Notación de Corchetes:
+Edad primera persona: 
+    personas[0]["edad"] = ${personas[0]["edad"]}
       `);
   }
 
@@ -47,64 +47,64 @@ export default class Cl_demosArrays {
       { nombre: "Zack", edad: 45, lenguajes: ["Go", "C#"] },
     ];
     alert(`
-      Tipos de datos primitivos:
-      numeros[2] = ${numeros[2]}
+==> Tipos de datos primitivos:
+numeros[2] = ${numeros[2]}
 
-      Tipos de datos objetos:
-      Acceder al nombre del primer desarrollador
-      desarrolladores[0].nombre = ${desarrolladores[0].nombre}
-      Acceder al segundo lenguaje del segundo desarrollador
-      desarrolladores[1].lenguajes[1] = ${desarrolladores[1].lenguajes[1]}
+==> Tipos de datos objetos:
+Acceder al nombre del primer desarrollador
+desarrolladores[0].nombre = ${desarrolladores[0].nombre}
+Acceder al segundo lenguaje del segundo desarrollador
+desarrolladores[1].lenguajes[1] = ${desarrolladores[1].lenguajes[1]}
       `);
   }
 
   ejemploPush() {
     let numeros = [1, 2, 3];
     alert(`
-      Antes de push
-      numeros = ${numeros}
+==> Antes de push
+numeros = ${numeros}
     `);
     numeros.push(4);
     alert(`
-      Despues de numeros.push(4)
-      numeros = ${numeros}
+==> Despues de numeros.push(4)
+numeros = ${numeros}
     `);
     numeros.push(5, 6);
     alert(`
-      Despues de numeros.push(5, 6)
-      numeros = ${numeros}
+==> Despues de numeros.push(5, 6)
+numeros = ${numeros}
     `);
   }
 
   ejemploUnshift() {
     let frutas = ["manzana", "banana"];
     alert(`
-      Antes de unshift
-      frutas = ${frutas}
+==> Antes de unshift
+frutas = ${frutas}
     `);
     frutas.unshift("naranja");
     alert(`
-      Despues de frutas.unshift("naranja")
-      frutas = ${frutas}
+==> Despues de frutas.unshift("naranja")
+frutas = ${frutas}
     `);
     frutas.unshift("uva", "pera");
     alert(`
-      Despues de frutas.unshift("uva", "pera")
-      frutas = ${frutas}
+==> Despues de frutas.unshift("uva", "pera")
+frutas = ${frutas}
     `);
   }
 
   ejemploPop() {
     let numeros = [1, 2, 3, 4, 5];
     alert(`
-      Array de números
-      Antes de pop
-      numeros = ${numeros}`);
+==> Array de números
+Antes de pop
+numeros = ${numeros}`);
     let ultimoNumero = numeros.pop();
     alert(`
-      Despues de numeros.pop()
-      numeros = ${numeros}
-      El último número fue ${ultimoNumero}
+==> Despues de numeros.pop()
+numeros = ${numeros}
+El último número fue ${ultimoNumero}
       `);
     let personas = [
       { nombre: "Ana", edad: 25 },
@@ -112,14 +112,14 @@ export default class Cl_demosArrays {
       { nombre: "Carlos", edad: 35 },
     ];
     alert(`
-      Array de objetos
-      Antes de pop
-      personas = ${JSON.stringify(personas)}`);
+==> Array de objetos
+Antes de pop
+personas = ${JSON.stringify(personas)}`);
     let ultimaPersona = personas.pop();
     alert(`
-      Despues de personas.pop()
-      personas = ${JSON.stringify(personas)}
-      La persona eliminada fue ${JSON.stringify(ultimaPersona)}
+==> Despues de personas.pop()
+personas = ${JSON.stringify(personas)}
+La persona eliminada fue ${JSON.stringify(ultimaPersona)}
       `);
   }
 
@@ -127,15 +127,15 @@ export default class Cl_demosArrays {
     // Array de elementos primitivos (números)
     let numeros = [1, 2, 3, 4, 5];
     alert(`
-      Array de elementos primitivos (números)
-      Antes de shift
-      numeros = ${numeros}
+==> Array de elementos primitivos (números)
+Antes de shift
+numeros = ${numeros}
       `);
     let primerNumero = numeros.shift();
     alert(`
-      Despues de numeros.shift()
-      numeros = ${numeros}
-      El primer número fue ${primerNumero}
+==> Despues de numeros.shift()
+numeros = ${numeros}
+El primer número fue ${primerNumero}
       `);
     // Array de objetos
     let personas = [
@@ -144,15 +144,15 @@ export default class Cl_demosArrays {
       { nombre: "Carlos", edad: 35 },
     ];
     alert(`
-      Array de objetos
-      Antes de shift
-      personas = ${JSON.stringify(personas)}
+==> Array de objetos
+Antes de shift
+personas = ${JSON.stringify(personas)}
       `);
     let primeraPersona = personas.shift();
     alert(`
-      Despues de personas.shift()
-      personas = ${JSON.stringify(personas)}
-      La persona eliminada fue ${JSON.stringify(primeraPersona)}
+==> Despues de personas.shift()
+personas = ${JSON.stringify(personas)}
+La persona eliminada fue ${JSON.stringify(primeraPersona)}
       `);
   }
 
@@ -160,15 +160,15 @@ export default class Cl_demosArrays {
     // Array de elementos primitivos (números)
     let numeros = [1, 2, 3, 4, 5];
     alert(`
-      Array de elementos primitivos (números)
-      Antes de splice
-      numeros = ${numeros}
+==> Array de elementos primitivos (números)
+Antes de splice
+numeros = ${numeros}
       `);
     let eliminados = numeros.splice(2, 2, 6, 7);
     alert(`
-      Luego de splice
-      numeros = ${numeros}
-      Elementos eliminados: ${eliminados}
+==> Luego de splice
+numeros = ${numeros}
+Elementos eliminados: ${eliminados}
       `);
     // Array de objetos
     let personas = [
@@ -178,15 +178,15 @@ export default class Cl_demosArrays {
       { nombre: "María", edad: 28 },
     ];
     alert(`
-      Array de objetos
-      Antes de splice
-      personas = ${JSON.stringify(personas)}
+==> Array de objetos
+Antes de splice
+personas = ${JSON.stringify(personas)}
       `);
     eliminados = personas.splice(1, 2, { nombre: "Pedro", edad: 40 });
     alert(`
-      Luego de splice
-      personas = ${JSON.stringify(personas)}
-      Elementos eliminados: ${JSON.stringify(eliminados)}
+==> Luego de splice
+personas = ${JSON.stringify(personas)}
+Elementos eliminados: ${JSON.stringify(eliminados)}
       `);
   }
 
@@ -195,9 +195,9 @@ export default class Cl_demosArrays {
     const numeros = [1, 2, 3, 4, 5];
     const duplicados = numeros.map((num) => num * 2);
     alert(`
-      Ejemplo con Elementos Primitivos
-      numeros = ${numeros}
-      duplicados = ${duplicados}
+==> Ejemplo con Elementos Primitivos
+numeros = ${numeros}
+duplicados = ${duplicados}
       `);
     // Ejemplo con Objetos
     const personas = [
@@ -207,9 +207,9 @@ export default class Cl_demosArrays {
     ];
     const nombres = personas.map((persona) => persona.nombre);
     alert(`
-      Ejemplo con Objetos
-      personas = ${JSON.stringify(personas)}
-      nombres = ${nombres}
+==> Ejemplo con Objetos
+personas = ${JSON.stringify(personas)}
+nombres = ${nombres}
       `);
   }
   metodoMap2() {
@@ -223,11 +223,11 @@ export default class Cl_demosArrays {
       edad: persona.edad + 1,
     }));
     alert(`
-      Ejemplo método map()
-      personas = ${JSON.stringify(personas)}
-      personasConEdadIncrementada = ${JSON.stringify(
-        personasConEdadIncrementada
-      )}
+==> Ejemplo método map()
+personas = ${JSON.stringify(personas)}
+personasConEdadIncrementada = ${JSON.stringify(
+  personasConEdadIncrementada
+)}
       `);
   }
   ciclosTradicionales() {
@@ -266,9 +266,9 @@ export default class Cl_demosArrays {
     const numeros = [5, 12, 8, 130, 44];
     const mayoresQueDiez = numeros.filter((num) => num > 10);
     alert(`
-      Ejemplo con datos primitivos
-      números = ${numeros}
-      números mayores que 10: ${mayoresQueDiez}
+==> Ejemplo con datos primitivos
+números = ${numeros}
+números mayores que 10: ${mayoresQueDiez}
       `);
     const personas = [
       { nombre: "Ana", edad: 25 },
@@ -277,32 +277,32 @@ export default class Cl_demosArrays {
     ];
     const nombres = personas.map((persona) => persona.nombre);
     alert(`
-        Ejemplo con objetos
-        personas = ${JSON.stringify(personas)}
-        nombres = ${nombres}
+==> Ejemplo con objetos
+personas = ${JSON.stringify(personas)}
+nombres = ${nombres}
         `);
   }
 
   metodoSort() {
     let numeros = [10, 5, 8, 1, 7];
     alert(`
-      Ejemplo con datos primitivos
-      números = ${numeros}
+==> Ejemplo con datos primitivos
+números = ${numeros}
       `);
     numeros.sort((a, b) => a - b); // Ordena de menor a mayor
     alert(`
-        Los números ordenados de menor a mayor
-        números = ${numeros}
+==> Los números ordenados de menor a mayor
+números = ${numeros}
         `);
     let palabras = ["manzana", "naranja", "banana", "kiwi"];
     alert(`
-        Ejemplo con datos primitivos
-        palabras = ${palabras}
+==> Ejemplo con datos primitivos
+palabras = ${palabras}
         `);
     palabras.sort(); // Ordena alfabéticamente
     alert(`
-        Las palabras ordenadas alfabéticamente
-        palabras = ${palabras}
+==> Las palabras ordenadas alfabéticamente
+palabras = ${palabras}
         `);
     let personas = [
       { nombre: "Ana", edad: 25 },
@@ -310,13 +310,13 @@ export default class Cl_demosArrays {
       { nombre: "Carlos", edad: 20 },
     ];
     alert(`
-        Ejemplo con objetos
-        personas = ${JSON.stringify(personas)}
+==> Ejemplo con objetos
+personas = ${JSON.stringify(personas)}
         `);
     personas.sort((a, b) => a.edad - b.edad); // Ordena por edad de menor a mayor
     alert(`
-        Las personas ordenadas por edad de menor a mayor
-        personas = ${JSON.stringify(personas)}
+==> Las personas ordenadas por edad de menor a mayor
+personas = ${JSON.stringify(personas)}
         `);
   }
 }
