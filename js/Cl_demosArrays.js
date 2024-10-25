@@ -225,9 +225,7 @@ nombres = ${nombres}
     alert(`
 ==> Ejemplo método map()
 personas = ${JSON.stringify(personas)}
-personasConEdadIncrementada = ${JSON.stringify(
-  personasConEdadIncrementada
-)}
+personasConEdadIncrementada = ${JSON.stringify(personasConEdadIncrementada)}
       `);
   }
   ciclosTradicionales() {
@@ -272,14 +270,14 @@ números mayores que 10: ${mayoresQueDiez}
       `);
     const personas = [
       { nombre: "Ana", edad: 25 },
-      { nombre: "Luis", edad: 30 },
+      { nombre: "Luis", edad: 15 },
       { nombre: "Carlos", edad: 35 },
     ];
-    const nombres = personas.map((persona) => persona.nombre);
+    const mayoresDe18 = personas.filter((persona) => persona.edad > 18);
     alert(`
 ==> Ejemplo con objetos
 personas = ${JSON.stringify(personas)}
-nombres = ${nombres}
+mayores de 18 = ${JSON.stringify(mayoresDe18)}
         `);
   }
 
